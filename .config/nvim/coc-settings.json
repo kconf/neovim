@@ -1,0 +1,10 @@
+{
+  "python.formatting.provider": "black",
+  "inlayHint.enable": false,
+  "Lua.diagnostics.globals": ["vim"],
+  "Lua.format.defaultConfig": {
+    "indent_style": "space",
+    "indent_size": "2",
+    "tab_width": "2"
+  }
+}
