@@ -1,7 +1,7 @@
 {
   "python.formatting.provider": "black",
   "inlayHint.enable": false,
-  "Lua.diagnostics.globals": ["vim"],
+  "Lua.diagnostics.globals": ["vim", "hs"],
   "Lua.format.defaultConfig": {
     "indent_style": "space",
     "indent_size": "2",
