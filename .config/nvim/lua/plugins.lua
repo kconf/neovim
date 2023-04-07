@@ -27,6 +27,9 @@ return require('packer').startup(function(use)
     -- coc
     use { 'neoclide/coc.nvim', branch = 'release', config = [[require('config.coc')]] }
 
+    -- copilot
+    use 'github/copilot.vim'
+
     -- Search using fzf
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' }, cmd = 'Telescope',
         setup = [[require('config.telescope_setup')]] }
