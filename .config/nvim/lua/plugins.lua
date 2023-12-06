@@ -13,7 +13,15 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
-    use 'tpope/vim-surround'
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
     use 'tomtom/tcomment_vim'
 
     use { 'tpope/vim-dispatch', opt = true, cmd = { 'Dispatch', 'Make', 'Focus', 'Start' } }
@@ -27,8 +35,11 @@ return require('packer').startup(function(use)
     -- coc
     use { 'neoclide/coc.nvim', branch = 'release', config = [[require('config.coc')]] }
 
+    -- codeium
+    use 'Exafunction/codeium.vim'
+
     -- copilot
-    use 'github/copilot.vim'
+    -- use 'github/copilot.vim'
 
     -- Search using fzf
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' }, cmd = 'Telescope',
