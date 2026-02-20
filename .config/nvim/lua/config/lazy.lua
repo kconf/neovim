@@ -35,7 +35,7 @@ require("lazy").setup({
       disabled_plugins = {
         "gzip",
         -- "matchit",
-        "matchparen", -- disable if you don't need bracket highlighting
+        -- "matchparen", -- disable if you don't need bracket highlighting
         "netrwPlugin", -- disable netrw if using file explorer plugins
         "tarPlugin",
         "tohtml",
