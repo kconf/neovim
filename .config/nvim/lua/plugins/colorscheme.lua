@@ -15,11 +15,11 @@ return {
   { "rose-pine/neovim", name = "rose-pine", lazy = true },
   { "sainnhe/everforest", lazy = true },
 
-  -- Configure LazyVim to load PaperColor
+  -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin" ,
+      colorscheme = "rose-pine" ,
     },
   },
 }

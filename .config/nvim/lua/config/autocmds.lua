@@ -6,6 +6,6 @@
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown", "quarto" },
   callback = function()
-    vim.diagnostic.disable(0)
+    vim.diagnostic.enable(false)
   end,
 })
