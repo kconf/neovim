@@ -2,13 +2,13 @@ return {
   {
     "yetone/avante.nvim",
     opts = {
-      provider = "bifrost",
+      provider = "pi",
       providers = {
-        bifrost = {
+        pi = {
           __inherited_from = "openai",
-          endpoint = "http://127.0.0.1:4000/v1",
-          model = "coding",
-          api_key_name = "BIFROST_API_KEY",
+          endpoint = os.getenv("PI_BASE_URL") or "http://127.0.0.1:4000/v1",
+          model = os.getenv("PI_MODEL") or "coding",
+          api_key_name = "PI_API_KEY",
           timeout = 30000,
         }
       }
